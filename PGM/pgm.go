@@ -180,7 +180,7 @@ func (pgm *PGM) ToPBM() *PBM {
 
 func main() {
 	//mon chemin
-	pgmFilename := "C:/Users/JENGO/Netbpm/PGM/duck.pgm"
+	pgmFilename := "duck.pgm"
 	pgm, err := ReadPGM(pgmFilename)
 	if err != nil {
 		fmt.Println("Error reading PGM:", err)
@@ -197,7 +197,7 @@ func main() {
 	pgm.Flip()
 
 	//mon chemin
-	modifiedPGMFilename := "C:/Users/JENGO/Netbpm/PGM/duck_edit.pgm"
+	modifiedPGMFilename := "duck_edit.pgm"
 	err = pgm.Save(modifiedPGMFilename)
 	if err != nil {
 		fmt.Println("Error saving modified PGM:", err)

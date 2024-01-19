@@ -532,7 +532,7 @@ func abs(x int) int {
 
 func main() {
 
-	ppm, err := ReadPPM("C:/Users/JENGO/Netbpm/PPM/duck.ppm")
+	ppm, err := ReadPPM("duck.ppm")
 	if err != nil {
 		fmt.Println("Error reading PPM file:", err)
 		return

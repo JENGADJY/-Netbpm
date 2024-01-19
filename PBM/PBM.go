@@ -205,7 +205,7 @@ func (pbm *PBM) SetMagicNumber(magicNumber string) {
 }
 
 func main() {
-	filename := "C:/Users/JENGO/Netbpm/PBM/duck.pbm" // mon chemin
+	filename := "duck.pbm" // mon chemin
 	pbm, err := ReadPBM(filename)
 	if err != nil {
 		fmt.Println("Error:", err)
@@ -226,7 +226,7 @@ func main() {
 	pbm.Set(x, y, newValue)
 	fmt.Printf("New pixel value at (%d, %d): %v\n", x, y, pbm.At(x, y))
 
-	outputFilename := "output.pbm"
+	outputFilename := "duck2.pbm"
 	err = pbm.Save(outputFilename)
 	if err != nil {
 		fmt.Println("Error saving the PBM image:", err)
